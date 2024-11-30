@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     padding: 15,
     backgroundColor: '#007BFF',
     borderRadius: 10,
-    marginBottom: 10, // Added spacing between button and forgot password link
+    marginBottom: 10, 
   },
   buttonText: {
     color: '#fff',

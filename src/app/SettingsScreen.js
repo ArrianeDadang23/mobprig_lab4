@@ -35,10 +35,15 @@ const SettingsScreen = ({ navigation }) => {
         />
       </View>
 
-      {/* Other Settings */}
-      <TouchableOpacity style={styles.option}>
+      {/* Customization Button */}
+      <TouchableOpacity
+        style={styles.option}
+        onPress={() => navigation.navigate('Customization')}
+      >
         <Text style={styles.optionText}>Customization</Text>
       </TouchableOpacity>
+
+      {/* Other Settings */}
       <TouchableOpacity style={styles.option}>
         <Text style={styles.optionText}>About Us</Text>
       </TouchableOpacity>
@@ -69,6 +74,7 @@ const SettingsScreen = ({ navigation }) => {
   );
 };
 
+// Styles for SettingsScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -83,7 +89,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontWeight: 'bold',
     color: '#FFF',
-    marginLeft: 15, // Spacing to align title properly
+    marginLeft: 15,
   },
   option: {
     flexDirection: 'row',

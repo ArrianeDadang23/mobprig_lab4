@@ -28,7 +28,10 @@ const HomeScreen = ({ navigation }) => {
       </View>
 
       {/* Task Sections */}
-      <TouchableOpacity style={styles.sectionButton}>
+      <TouchableOpacity 
+        style={styles.sectionButton}
+        onPress={() => navigation.navigate('NotesTask')}
+      >
         <View style={styles.sectionContent}>
           <MaterialIcons name="assignment" size={30} color="#FF4081" />
           <Text style={styles.sectionText}>Personal</Text>
